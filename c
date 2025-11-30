@@ -1,6 +1,6 @@
-||||       DAY  =  1       |||||
+//////////            DAY  =  1            //////////
 
-\*  Pattern = 1   *\
+/*  Pattern = 1   */
 #include <stdio.h>
 int main() {
     int i,j;
@@ -20,7 +20,7 @@ int main() {
 0 5 10 15 20 25 
 0 6 12 18 24 30 36 
   
-\*  Pattern = 2   *\
+/*  Pattern = 2   */
 #include <stdio.h>
 int main() {
     int limit=5,i,j,k;
@@ -48,3 +48,29 @@ int main() {
 *  *  *              *  *  *
 *  *  *  *        *  *  *  *
 *  *  *  *  *  *  *  *  *  *
+
+//////////            DAY =3            //////////    
+
+/*  Pattern = 1   */
+#include <stdio.h>
+int main()
+{
+    int n=5,i,j,k;
+    for(i=1;i<=n;i++){
+        for(j=1;j<=n;j++){
+            if(i==1||j==n+1-i||i==n) {
+                printf("* ");
+            }else{
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+*  *  *  *  *
+         *
+      *
+   *
+*  *  *  *  *
